@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent A Store</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Rent A Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#findus">Find Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#reviews">Reviews</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="py-5 text-center" style="background: url('img/space.jpg') no-repeat center center/cover;">
+        <div class="container">
+            <h1>Welcome to Rent A Store</h1>
+            <p>Your one-stop solution for renting store spaces.</p>
+            <a href="#about" class="btn btn-secondary">See More</a>
+        </div>
+    </section>
+    <!-- About Us Section -->
+    <section id="about" class="py-5">
+        <div class="container d-flex">
+            <img src="img/rentastore.jpg" class="img-fluid" alt="About Us" style="max-width: 50%; ">
+            <div class="ml-4">
+                <h2>About Us</h2>
+                <p>We offer a wide range of rental spaces for businesses looking to expand or establish a presence. Our locations are strategically placed to maximize foot traffic and visibility.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Us Section -->
+    <section id="findus" class="py-5">
+        <div class="container text-center">
+            <h2>Find Us</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="location-frame">
+                        <img src="img/Mosbaek.jpg" class="img-thumbnail" alt="Location 1">
+                        <p>WEST AREA DOWNTOWN</p>
+                        <button class="btn btn-primary mt-2" onclick="window.location.href='#contact'">Select Location</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="location-frame">
+                        <img src="img/rent.jpg" class="img-thumbnail" alt="Location 2">
+                        <P>DEPLOOT</P>
+                        <button class="btn btn-primary mt-2" onclick="window.location.href='#contact'">Select Location</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="location-frame">
+                        <img src="img/rentastore.jpg" class="img-thumbnail" alt="Location 3">
+                        <P>Parker street</P>
+                        <button class="btn btn-primary mt-2" onclick="window.location.href='#contact'">Select Location</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="location-frame">
+                        <img src="img/rent4.jpg" class="img-thumbnail" alt="Location 4">
+                        <p>Trakpan</p>
+                        <button class="btn btn-primary mt-2" onclick="window.location.href='#contact'">Select Location</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="location-frame">
+                        <img src="img/rent3.jpg" class="img-thumbnail" alt="Location 5">
+                        <p>High Road avenue</p>
+                        <button class="btn btn-primary mt-2" onclick="window.location.href='#contact'">Select Location</button>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="location-frame">
+                        <img src="img/rent4.jpg" class="img-thumbnail" alt="Location 6">
+                        <p>John street</p>
+                        <button class="btn btn-primary mt-2" onclick="window.location.href='#contact'">Select Location</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Reviews</h2>
+            <br>
+            <br>
+            <div class="d-flex justify-content-around flex-wrap">
+                <div class="review text-center">
+                    <img src="img/pp3.png" class="rounded-circle" alt="Profile 1" width="80">
+                    <p>"Great service and fantastic locations!"</p>
+                </div>
+                <div class="review text-center">
+                    <img src="img/pp.jpg" class="rounded-circle" alt="Profile 2" width="80">
+                    <p>"Highly recommend Rent A Store for any business."</p>
+                </div>
+                <div class="review text-center">
+                    <img src="img/pp2.png" class="rounded-circle" alt="Profile 3" width="80">
+                    <p>"Excellent customer support and flexible rental terms."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <form id="contactForm">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <a href="#Home" id="back-to-top" title="Back to Top">&uarr;</a>
+    <script src="script.js"></script>
+
+    <!-- Extended Footer -->
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Rent A Store</h5>
+                    <p>Your one-stop solution for renting store spaces.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-white">Home</a></li>
+                        <li><a href="#about" class="text-white">About Us</a></li>
+                        <li><a href="#findus" class="text-white">Find Us</a></li>
+                        <li><a href="#reviews" class="text-white">Reviews</a></li>
+                        <li><a href="#contact" class="text-white">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Info</h5>
+                    <p>Email: info@rentastore.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Store St, City, Country</p>
+                </div>
+            </div>
+            <p class="mt-4">Website designed by <span class="text-success">IPAIWEBDEV <span style="color: blue;">AI</span></span></p>
+            <p>Email: peteripaaii99@gmail.com</p>
+
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var backToTop = document.getElementById("back-to-top");
+
+            // Show or hide the button
+            window.onscroll = function() {
+                if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                    backToTop.style.display = "block";
+                } else {
+                    backToTop.style.display = "none";
+                }
+            };
+
+            // Scroll to the top smoothly
+            backToTop.addEventListener("click", function(event) {
+                event.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
