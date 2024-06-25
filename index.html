@@ -121,23 +121,19 @@
     </section>
 
     <!-- Contact Us Section -->
-    <section id="contact" class="py-5">
+ <section id="contact" class="text-center py-5">
         <div class="container">
-            <h2 class="text-center">Contact Us</h2>
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any queries or to book our services.</p>
             <form id="contactForm">
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" required>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" required>
-                    </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
                 </div>
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Send Message</button>
             </form>
@@ -200,7 +196,11 @@
             });
         });
     </script>
-    
+    <script> document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Message sent! We will get back to you soon.');
+});
+</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
