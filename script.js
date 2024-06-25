@@ -15,3 +15,8 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert('Message sent! We will get back to you soon.');
+});
